@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './App.scss';
+import Header from './components/Header';
 
 function App() {
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    function handleHamburgerClick(event:React.MouseEvent) {
+        event.preventDefault()
+        setHamburgerOpen(!hamburgerOpen)
+    }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+      <>
+        <Header handleHamburgerClick={handleHamburgerClick} hamburgerOpen={hamburgerOpen} />
+        <div>
+            <h4>Home</h4>
+            <h4>About Us</h4>
+            <h4>Create Your Plan</h4>
+        </div>
+        <main>
+
+        </main>
+      </>
   );
 }
 
