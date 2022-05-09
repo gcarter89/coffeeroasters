@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
-import Header from './components/Header';
+import Header from './components/header/Header';
+import Home from './components/home/Home';
 
 function App() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -14,13 +15,8 @@ function App() {
       
       <>
         <Header handleHamburgerClick={handleHamburgerClick} hamburgerOpen={hamburgerOpen} />
-        <div>
-            <h4>Home</h4>
-            <h4>About Us</h4>
-            <h4>Create Your Plan</h4>
-        </div>
         <main>
-
+            <Home />
         </main>
       </>
   );

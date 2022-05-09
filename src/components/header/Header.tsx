@@ -1,5 +1,5 @@
 import Nav from './Nav';
-import {ReactComponent as Logo} from '../assets/shared/desktop/logo.svg';
+import {ReactComponent as Logo} from '../../assets/shared/desktop/logo.svg';
 import styles from './Header.module.scss';
 import React from 'react';
 
