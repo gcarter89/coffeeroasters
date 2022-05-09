@@ -42,6 +42,7 @@
     &__collectionTitle {
         position: relative;
         margin-bottom: 32px;
+        text-align: center;
         ::after {
             content: "";
             position: absolute;
@@ -64,6 +65,7 @@
         }
 
         p {
+            max-width: 282px;
             color: #333D4B;
         }
     }
