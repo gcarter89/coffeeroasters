@@ -4,6 +4,10 @@ import Danche from '../../assets/home/desktop/image-danche.png';
 import Piccollo from '../../assets/home/desktop/image-piccollo.png';
 import Planalto from '../../assets/home/desktop/image-planalto.png';
 
+import {ReactComponent as Bean} from '../../assets/home/desktop/icon-coffee-bean.svg';
+import {ReactComponent as Gift} from '../../assets/home/desktop/icon-gift.svg';
+import {ReactComponent as Truck} from '../../assets/home/desktop/icon-truck.svg';
+
 export default function Home() {
     return (
         <>
@@ -50,6 +54,42 @@ export default function Home() {
                         <p>Ethiopian hand-harvested lend densely packed with vibrant fruit notes</p>
                     </div>
                 </div>
+            </section>
+            
+            <section className={styles.home__choices}>
+                <div className={styles.home__choicesColourBlock}></div>
+                <div className={styles.home__choicesText}>
+                    <h3>Why choose us?</h3>
+                    <p>A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
+                </div>
+
+                <div className={styles.home__choicesCards}>
+                    <div className={styles.home__choicesCard}>
+                        <Bean />
+                        <div>
+                            <h4>Best quality</h4>
+                            <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.home__choicesCard}>
+                        <Gift />
+                        <div>
+                            <h4>Exclusive benefits</h4>
+                            <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.home__choicesCard}>
+                        <Truck />
+                        <div>
+                            <h4>Free shipping</h4>
+                            <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
                 
             </section>
         </>
