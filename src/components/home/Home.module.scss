@@ -113,16 +113,17 @@
     }
 
     &__choicesCards {
-        width: 280px;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 24px
     }
 
     &__choicesCard {
-        max-width: 280px;
+        width: calc(100% - 64px);
         box-sizing: border-box;
-        height: 382px;
+        min-height: 382px;
         background: #0E8784;
         border-radius: 8px;
         display: flex;
@@ -144,7 +145,7 @@
         }
 
         p {
-            width: 212px;
+            max-width: 212px;
         }
     }
 
