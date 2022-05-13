@@ -237,5 +237,40 @@
             margin-top: 24px;
             margin-left: 24px;
         }
+        
+        &__choices {
+            padding-top: 56px;
+            max-width: 689px;
+        }
+
+        &__choicesText {
+            max-width: 540px;
+        }
+
+        &__choicesColourBlock {
+            height: 574px;
+        }
+
+        &__choicesCard {
+            flex-direction: row;
+            height: 183px;
+            min-height: unset;
+            padding: unset;
+            text-align: unset;
+            justify-content: center;
+            gap: 56px;
+
+            svg {
+                margin-bottom: unset;
+            }
+
+            h4 {
+                margin-bottom: 16px;
+            }
+
+            p {
+                max-width: 344px;
+            }
+        }
     }
 }
