@@ -19,6 +19,11 @@
 @media screen and (min-width:'700px') {
     .header {
         max-width: 689px;
-
+        margin-bottom: 56px;
+        &__logoContainer {
+            height: 26px;
+            width: 236px;
+            
+        }
     }
 }
