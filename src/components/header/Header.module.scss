@@ -1,4 +1,7 @@
 .header {
+    max-width: 380px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -10,5 +13,12 @@
             height: 100%;
             width: 100%;
         }
+    }
+}
+
+@media screen and (min-width:'700px') {
+    .header {
+        max-width: 689px;
+
     }
 }
