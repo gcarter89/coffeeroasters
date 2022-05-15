@@ -83,3 +83,16 @@ p {
 button {
     all: unset;
 }
+
+// tablet
+@media screen and (min-width:'700px') {
+    section {
+        max-width: 689px;
+    }
+
+
+    h3 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}

@@ -1,4 +1,7 @@
 .header {
+    max-width: 380px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -9,6 +12,18 @@
         svg {
             height: 100%;
             width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:'700px') {
+    .header {
+        max-width: 689px;
+        margin-bottom: 56px;
+        &__logoContainer {
+            height: 26px;
+            width: 236px;
+            
         }
     }
 }

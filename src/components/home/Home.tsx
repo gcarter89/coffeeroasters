@@ -92,20 +92,25 @@ export default function Home() {
 
             <section className={styles.home__process}>
                 <h4>How it works</h4>
+                <hr className={styles.home__processCardsDivider} />
                 <div className={styles.home__processCards}>
+                
                     <div className={styles.home__processCard}>
+                        <div className={styles.home__processCardCircle}></div>
                         <span className='largeHeading'>01</span>
                         <h3>Pick your coffee</h3>
                         <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
                     </div>
 
                     <div className={styles.home__processCard}>
+                        <div className={styles.home__processCardCircle}></div>
                         <span className='largeHeading'>02</span>
                         <h3>Choose your frequency</h3>
                         <p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
                     </div>
 
                     <div className={styles.home__processCard}>
+                        <div className={styles.home__processCardCircle}></div>
                         <span className='largeHeading'>03</span>
                         <h3>Receive and enjoy</h3>
                         <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
