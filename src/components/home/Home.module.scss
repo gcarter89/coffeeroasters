@@ -191,11 +191,10 @@
     }
 }
 
-@media screen and (min-width:'700px') {
+@media screen and (min-width:'732px') {
     .home {
         &__hero {
             background-image: url('../../assets/home/tablet/image-hero-coffeepress.jpg');
-            max-width: 689px;
             justify-content: unset;
             box-sizing: border-box;
             padding: 58px;
@@ -204,10 +203,6 @@
         &__heroText {
             text-align: unset;
             padding: unset;
-        }
-
-        &__collection {
-            max-width: 689px;
         }
 
         &__collectionTitle {
@@ -244,7 +239,6 @@
         
         &__choices {
             padding-top: 56px;
-            max-width: 689px;
         }
 
         &__choicesText {
@@ -324,4 +318,41 @@
             background-color: #FEFCF7;
         }
     }
+}
+
+@media screen and (min-width:'1200px') {
+    .home {
+        &__collectionTitle {
+            width: 140%;
+            margin-bottom: 10px;
+            h1 {
+                font-size: 148px;
+            }
+            ::after {
+                bottom: -40px;
+                height: 360px;
+            }
+        }
+
+
+
+        &__collectionCards {
+            display: flex;
+            text-align: center;
+            gap: 30px;  
+        }
+
+        &__collectionCard {
+            flex-direction: column;
+            gap: 70px;
+        }
+
+        &__collectionCardText {
+            margin-left: unset;
+            margin-top: unset;
+            width: 240px;
+
+        }
+    }
+
 }
