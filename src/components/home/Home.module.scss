@@ -322,6 +322,24 @@
 
 @media screen and (min-width:'1200px') {
     .home {
+        &__hero {
+            background-image: url('../../assets/home/desktop/image-hero-coffeepress.jpg');
+            height: 600px;
+            padding: 85px;
+        }
+
+        &__heroText {
+            max-width: 492px;
+            h1 {
+                margin-bottom: 32px;
+            }
+
+            p {
+                max-width: 445px;
+                margin-bottom: 56px;
+            }
+        }
+
         &__collectionTitle {
             width: 140%;
             margin-bottom: 10px;

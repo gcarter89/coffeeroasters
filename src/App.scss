@@ -12,9 +12,7 @@ section {
 
 h1 {
     font-family: 'Fraunces', 'sans-serif';
-    // desktop
-    // font-size: 72px;
-    // line-height: 72px;
+
     // tablet
     // font-size: 48px;
     // line-height: 48px;
@@ -94,5 +92,21 @@ button {
     h3 {
         font-size: 32px;
         line-height: 36px;
+    }
+}
+
+@media screen and (min-width: '1200px') {
+    section {
+        max-width: 1280px;
+    }
+
+    h1 {
+    font-size: 72px;
+    line-height: 72px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
     }
 }
