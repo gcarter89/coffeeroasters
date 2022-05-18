@@ -61,3 +61,27 @@
     }
 
 }
+
+@media screen and (min-width:'1200px') {
+    .footer {
+        display: flex;
+        max-width: 1280px;
+        padding: 46px 80px;
+        justify-content: space-between;
+        box-sizing: border-box;
+
+        &__logoContainer {
+            margin-left: unset;
+            margin-right: unset;
+        }
+
+        &__links {
+            margin-top: unset;
+            margin-right: 160px;
+        }
+
+        &__icons {
+            margin-top: unset;
+        }
+    }
+}

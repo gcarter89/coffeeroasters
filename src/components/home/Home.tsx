@@ -67,7 +67,7 @@ export default function Home() {
                 <div className={styles.home__choicesCards}>
                     <div className={styles.home__choicesCard}>
                         <Bean />
-                        <div>
+                        <div className={styles.home__choicesCardText}>
                             <h4>Best quality</h4>
                             <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
                         </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
                     <div className={styles.home__choicesCard}>
                         <Gift />
-                        <div>
+                        <div className={styles.home__choicesCardText}>
                             <h4>Exclusive benefits</h4>
                             <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
                         </div>
@@ -83,7 +83,7 @@ export default function Home() {
 
                     <div className={styles.home__choicesCard}>
                         <Truck />
-                        <div>
+                        <div className={styles.home__choicesCardText}>
                             <h4>Free shipping</h4>
                             <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
                         </div>

@@ -27,3 +27,10 @@
         }
     }
 }
+
+@media screen and (min-width:'1200px') {
+    .header {
+        max-width: 1280px;
+        align-items: center;
+    }
+}
