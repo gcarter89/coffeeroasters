@@ -31,7 +31,7 @@
         img {
             width: 100%;
         }
-        margin-bottom: 120px;
+        margin-bottom: 184px;
     }
 
     &__commitmentText {
@@ -45,6 +45,42 @@
         p {
             line-height: 25px;
             color: #333D4B;
+            opacity: 0.8;
+        }
+    }
+
+    &__quality {
+        position: relative;
+        display: flex;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../../assets/about/mobile/bg-quality.png');
+        background-size: cover;
+        border-radius: 10px;
+        justify-content: flex-end;
+        padding: 0 24px 64px 24px;
+        // padding-bottom: ;
+        box-sizing: border-box;
+
+        img {
+            position: absolute;
+            top: -64px;
+            width: 80%;
+            border-radius: 10px;
+        }
+    }
+
+    &__qualityText {
+        text-align: center;
+
+        h2 {
+            color: #FEFCF7;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: #FEFCF7;
             opacity: 0.8;
         }
     }
