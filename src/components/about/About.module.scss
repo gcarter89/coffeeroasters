@@ -60,8 +60,8 @@
         border-radius: 10px;
         justify-content: flex-end;
         padding: 0 24px 64px 24px;
-        // padding-bottom: ;
         box-sizing: border-box;
+        margin-bottom: 120px;
 
         img {
             position: absolute;
@@ -83,5 +83,50 @@
             color: #FEFCF7;
             opacity: 0.8;
         }
+    }
+
+    &__headquarters {
+        h4 {
+            text-align: center;
+            color: #83888F;
+            margin-bottom: 72px;
+        }
+    }
+
+    &__locationCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 120px;
+        svg {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333D4B;
+        }
+
+        p {
+            line-height: 28px;
+            color: #333D4B;
+        }
+    }
+
+    &__locationCard {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:'732px') {
+    .about {
+
+    }
+}
+
+@media screen and (min-width:'1200px') {
+    .about {
+        
     }
 }
