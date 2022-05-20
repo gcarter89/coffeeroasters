@@ -30,6 +30,7 @@
     &__commitment {
         img {
             width: 100%;
+            border-radius: 10px;
         }
         margin-bottom: 184px;
     }
@@ -121,12 +122,25 @@
 
 @media screen and (min-width:'732px') {
     .about {
+        &__hero {
+            background-image: url('../../assets/about/tablet/image-hero-whitecup.jpg');
+            align-items: unset;
+            justify-content: unset;
+        }
 
+        &__heroText {
+            height: fit-content;
+            max-width: 398px;
+            text-align: left;
+            padding: 58px;
+            padding: 111px 58px 0px;
+            
+        }
     }
 }
 
 @media screen and (min-width:'1200px') {
     .about {
-        
+
     }
 }
