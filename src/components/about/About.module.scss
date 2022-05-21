@@ -134,7 +134,20 @@
             text-align: left;
             padding: 58px;
             padding: 111px 58px 0px;
-            
+        }
+
+        &__commitment {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 68px;
+
+            img {
+                width: 280px;
+            }
+        }
+
+        &__commitmentText {
+            margin-top: unset;
         }
     }
 }
