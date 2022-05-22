@@ -188,6 +188,7 @@
     .about {
         &__hero {
             background-image: url('../../assets/about/desktop/image-hero-whitecup.jpg');
+            margin-bottom: 168px;
         }
 
         &__heroText {
@@ -196,6 +197,7 @@
 
         &__commitment {
             max-width: 1110px;
+            margin-bottom: 240px;
             img {
                 width: 445px;
             }
@@ -209,9 +211,11 @@
 
         &__quality {
             flex-direction: row-reverse;
+            height: 474px;
             padding: 0px 84px;
             align-items: unset;
             justify-content: space-between;
+            margin-bottom: 168px;
             img {
                 margin-top: -96px;
             }
@@ -222,6 +226,18 @@
             margin-right: 40px;
             width: 540px;
             text-align: left;
+        }
+
+        &__headquarters {
+            padding-left: 10%;
+        }
+
+        &__locationCards {
+            gap: 104px;
+            h2 {
+                font-size: 32px;
+                line-height: 36px;
+            }
         }
 
     }
