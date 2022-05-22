@@ -1,0 +1,191 @@
+.about {
+    &__hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../assets/about/mobile/image-hero-whitecup.jpg');
+        height: 400px;
+        background-size: cover;
+        margin-bottom: 120px;
+        border-radius: 10px;
+        
+    }
+
+    &__heroText {
+        max-width: 280px;
+        padding: 111px 24px 0;
+        text-align: center;
+        color: #FEFCF7;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            opacity: 0.8;      
+        }
+    }
+
+    &__commitment {
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        margin-bottom: 184px;
+    }
+
+    &__commitmentText {
+        text-align: center;
+        margin-top: 48px;
+        h3 {
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 25px;
+            color: #333D4B;
+            opacity: 0.8;
+        }
+    }
+
+    &__quality {
+        position: relative;
+        display: flex;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('../../assets/about/mobile/bg-quality.png');
+        background-size: cover;
+        border-radius: 10px;
+        justify-content: flex-end;
+        padding: 0 24px 64px 24px;
+        box-sizing: border-box;
+        margin-bottom: 120px;
+
+        img {
+            position: absolute;
+            top: -64px;
+            left: 10%;
+            width: 80%;
+            border-radius: 10px;
+        }
+    }
+
+    &__qualityText {
+        text-align: center;
+
+        h2 {
+            color: #FEFCF7;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: #FEFCF7;
+            opacity: 0.8;
+        }
+    }
+
+    &__headquarters {
+        h4 {
+            text-align: center;
+            color: #83888F;
+            margin-bottom: 72px;
+        }
+    }
+
+    &__locationCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 120px;
+        svg {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333D4B;
+        }
+
+        p {
+            line-height: 28px;
+            color: #333D4B;
+        }
+    }
+
+    &__locationCard {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:'732px') {
+    .about {
+        &__hero {
+            background-image: url('../../assets/about/tablet/image-hero-whitecup.jpg');
+            align-items: unset;
+            justify-content: unset;
+        }
+
+        &__heroText {
+            height: fit-content;
+            max-width: 398px;
+            text-align: left;
+            padding: 58px;
+            padding: 111px 58px 0px;
+        }
+
+        &__commitment {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 240px;
+            img {
+                width: 280px;
+            }
+        }
+
+        &__commitmentText {
+            text-align: left;
+            margin-top: unset;
+        }
+
+        &__quality {
+            margin-bottom: 144px;
+            img {
+                position: unset;
+                top: unset;
+                width: unset;
+            }
+        }
+
+        &__qualityText {
+            max-width: 80%;
+            margin-top: 64px;
+        }
+
+        &__headquarters {
+            h4 {
+                text-align: left;
+            }
+        }
+
+        &__locationCards {
+            flex-direction: row;
+        }
+
+        &__locationCard {
+            text-align: left;
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:'1200px') {
+    .about {
+
+    }
+}
