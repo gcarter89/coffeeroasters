@@ -206,5 +206,23 @@
             height: fit-content;
             align-self: center;
         }
+
+        &__quality {
+            flex-direction: row-reverse;
+            padding: 0px 84px;
+            align-items: unset;
+            justify-content: space-between;
+            img {
+                margin-top: -96px;
+            }
+        }
+
+        &__qualityText {
+            margin-top: 88px;
+            margin-right: 40px;
+            width: 540px;
+            text-align: left;
+        }
+
     }
 }
