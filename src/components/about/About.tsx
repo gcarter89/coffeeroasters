@@ -1,7 +1,9 @@
 import styles from './About.module.scss';
 import commitmentMobileImage from '../../assets/about/mobile/image-commitment.jpg';
 import commitmentTabletImage from '../../assets/about/tablet/image-commitment.jpg';
+
 import qualityMobileImage from '../../assets/about/mobile/image-quality.jpg';
+import qualityTabletImage from '../../assets/about/tablet/image-quality.jpg';
 
 import { ReactComponent as UnitedKingdom } from '../../assets/about/desktop/illustration-uk.svg';
 import { ReactComponent as Australia } from '../../assets/about/desktop/illustration-australia.svg';
@@ -34,7 +36,13 @@ export default function About() {
         </section>
 
         <section className={styles.about__quality}>
-            <img src={qualityMobileImage} alt='coffee cup' />
+        <picture>
+                <source srcSet={qualityTabletImage} media="(min-width: 732px)" />
+
+                <img src={qualityMobileImage} alt="coffee cup" />
+
+            </picture>
+
             <div className={styles.about__qualityText}>
                 <h2>Uncompromising quality</h2>
                 <p>Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so that brewing is easy and enjoyable.</p>

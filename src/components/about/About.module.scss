@@ -139,15 +139,28 @@
         &__commitment {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 68px;
-
+            margin-bottom: 240px;
             img {
                 width: 280px;
             }
         }
 
         &__commitmentText {
+            text-align: left;
             margin-top: unset;
+        }
+
+        &__quality {
+            img {
+                position: unset;
+                top: unset;
+                width: unset;
+            }
+        }
+
+        &__qualityText {
+            max-width: 80%;
+            margin-top: 64px;
         }
     }
 }
