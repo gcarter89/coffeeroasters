@@ -1,9 +1,11 @@
 import styles from './About.module.scss';
 import commitmentMobileImage from '../../assets/about/mobile/image-commitment.jpg';
 import commitmentTabletImage from '../../assets/about/tablet/image-commitment.jpg';
+import commitmentDesktopImage from '../../assets/about/desktop/image-commitment.jpg';
 
 import qualityMobileImage from '../../assets/about/mobile/image-quality.jpg';
 import qualityTabletImage from '../../assets/about/tablet/image-quality.jpg';
+import qualityDesktopImage from '../../assets/about/desktop/image-quality.jpg';
 
 import { ReactComponent as UnitedKingdom } from '../../assets/about/desktop/illustration-uk.svg';
 import { ReactComponent as Australia } from '../../assets/about/desktop/illustration-australia.svg';
@@ -21,13 +23,14 @@ export default function About() {
 
         <section className={styles.about__commitment}>
             <picture>
+                <source srcSet={commitmentDesktopImage} media="(min-width: 1200px)" />
                 <source srcSet={commitmentTabletImage} media="(min-width: 732px)" />
+
 
                 <img src={commitmentMobileImage} alt="barista making coffee" />
 
             </picture>
 
-            {/* <img src={commitmentMobileImage} alt='barista making coffee' /> */}
             <div className={styles.about__commitmentText}>
                 <h3>Our commitment</h3>
                 <p>We’re built on a simple mission and a commitment to doing good along the way. We want to make it easy for you to discover and brew the world’s best coffee at home. It all starts at the source. To locate the specific lots we want to purchase, we travel nearly 60 days a year trying to understand the challenges and opportunities in each of these places. We collaborate with exceptional coffee growers and empower a global community of farmers through with well above fair-trade benchmarks. We also offer training, support farm community initiatives, and invest in coffee plant science. Curating only the finest blends, we roast each lot to highlight tasting profiles distinctive to their native growing region.</p>
@@ -37,7 +40,9 @@ export default function About() {
 
         <section className={styles.about__quality}>
         <picture>
+                <source srcSet={qualityDesktopImage} media="(min-width: 1200px)" />
                 <source srcSet={qualityTabletImage} media="(min-width: 732px)" />
+
 
                 <img src={qualityMobileImage} alt="coffee cup" />
 

@@ -186,6 +186,25 @@
 
 @media screen and (min-width:'1200px') {
     .about {
+        &__hero {
+            background-image: url('../../assets/about/desktop/image-hero-whitecup.jpg');
+        }
 
+        &__heroText {
+            max-width: 440px;
+        }
+
+        &__commitment {
+            max-width: 1110px;
+            img {
+                width: 445px;
+            }
+        }
+
+        &__commitmentText {
+            width: 538px;
+            height: fit-content;
+            align-self: center;
+        }
     }
 }
