@@ -7,6 +7,7 @@
         justify-content: center;
         align-items: center;
         background-size: cover;
+        margin-bottom: 120px;
     }
 
     &__heroText {
@@ -20,6 +21,47 @@
 
         p {
             opacity: 0.8;
+        }
+    }
+
+    &__steps {
+        background-image: url('../../assets/plan/mobile/bg-steps.png');
+        max-width: 1200px;
+        margin-left: -24px;
+        margin-right: -24px;
+        border-radius: 10px;
+        background-size: cover;
+        margin-bottom: 120px;
+    }
+
+    &__stepsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        max-width: 380px;
+        height: 100%;
+    }
+
+    &__stepsCard {
+        color: #FFFFFF;
+        max-width: 289px;
+        text-align: center;
+        span {
+            color: #FDD6BA;
+            font-size: 72px;
+            font-family: 'Fraunces';
+            font-weight: 900;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: #FFFFFF;
+            margin-bottom: 24px;
         }
     }
 }
