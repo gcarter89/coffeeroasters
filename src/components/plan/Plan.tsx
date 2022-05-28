@@ -148,7 +148,12 @@ export default function Plan() {
                 </div>
             </section>
 
-            <section>
+            <section className={styles.plan__summary}>
+                <div className={styles.plan__summaryCard}>
+                    <h3>Order Summary</h3>
+                    <p>“I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean. <span>250g</span> ground ala <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</p>
+                </div>
+                <button className={styles.plan__summaryButton}></button>
 
             </section>
         </>
