@@ -72,9 +72,11 @@
     }
 
     &__selectionHeader {
+        width: 100%;
         cursor: pointer;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-bottom: 32px;
         h3 {
             width: fit-content;
