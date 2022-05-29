@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './App.scss';
 import Header from './components/header/Header';
 // import Home from './components/home/Home';
-import About from './components/about/About';
+// import About from './components/about/About';
+import Plan from './components/plan/Plan';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Header handleHamburgerClick={handleHamburgerClick} hamburgerOpen={hamburgerOpen} />
         <main>
             {/* <Home /> */}
-            <About />
+            {/* <About /> */}
+            <Plan />
         </main>
         <Footer />
       </>
