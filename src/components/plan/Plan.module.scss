@@ -163,6 +163,7 @@
             padding: 56px;
             box-sizing: border-box;
             background-image: url('../../assets/plan/tablet/image-hero-blackcup.jpg');
+            margin-bottom: 144px;
         }
 
         &__heroText {
@@ -171,6 +172,30 @@
             h1 {
                 font-size: 48px;
                 line-height: 48px;
+            }
+        }
+
+        &__steps {
+            margin-right: -40px;
+            margin-left: -40px;
+        }
+
+        &__stepsContainer {
+            flex-direction: row;
+            max-width: 800px;
+            align-items: unset;
+            padding-left: 40px;
+            padding-right: 40px;
+            gap: 10px;
+        }
+
+        &__stepsCard {
+            max-width: 33%;
+            text-align: left;
+            padding-left: unset;
+            padding-right: unset;
+            span {
+                margin-bottom: 40px;
             }
         }
     }
