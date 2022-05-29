@@ -157,6 +157,23 @@
 
 
 @media screen and (min-width:'732px') {
+    .plan {
+        &__hero {
+            justify-content: unset;
+            padding: 56px;
+            box-sizing: border-box;
+            background-image: url('../../assets/plan/tablet/image-hero-blackcup.jpg');
+        }
+
+        &__heroText {
+            max-width: 400px;
+            text-align: left;
+            h1 {
+                font-size: 48px;
+                line-height: 48px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width:'1200px') {
