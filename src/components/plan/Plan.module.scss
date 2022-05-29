@@ -111,10 +111,18 @@
         }
     }
 
+    &__summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+
     &__summaryCard {
         background-image: url('../../assets/plan/mobile/bg-order-summary.png');
         padding: 32px 24px;
         border-radius: 8px;
+        margin-bottom: 56px;
         h3 {
             font-family: Barlow, sans-serif;
             font-size: 16px;
@@ -136,6 +144,14 @@
         span {
             color: #83888F;
         }
+    }
+    &__button {
+        font-size: 18px;
+        color: #FEFCF7;
+        background-color: #0E8784;
+        padding: 16px 32px;
+        border-radius: 6px;
+        cursor: pointer;
     }
 }
 

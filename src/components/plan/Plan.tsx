@@ -153,7 +153,7 @@ export default function Plan() {
                     <h3>Order Summary</h3>
                     <p>“I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean. <span>250g</span> ground ala <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</p>
                 </div>
-                <button className={styles.plan__summaryButton}></button>
+                <button className={styles.plan__button}>Create my plan!</button>
 
             </section>
         </>
