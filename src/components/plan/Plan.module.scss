@@ -153,7 +153,13 @@
         border-radius: 6px;
         cursor: pointer;
     }
+
+    &__stepsContainerDivider {
+        display: none;
+    }
 }
+
+
 
 
 @media screen and (min-width:'732px') {
@@ -181,6 +187,7 @@
         }
 
         &__stepsContainer {
+            position: relative;
             flex-direction: row;
             max-width: 800px;
             align-items: unset;
@@ -197,6 +204,24 @@
             span {
                 margin-bottom: 40px;
             }
+        }
+        &__stepsCardCircle {
+            height: 32px;
+            width: 32px;
+            margin-top: -19px;
+            border-radius: 50%;
+            border: 2px solid #0E8784;
+            background-color: transparent;
+        }
+
+        &__stepsContainerDivider {
+            position: absolute;
+            left: 60px;
+            width: 62%;
+            display: block;
+            height: 2px;
+            background-color: #FDD6BA;
+            border: none;
         }
     }
 }
