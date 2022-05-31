@@ -153,10 +153,120 @@
         border-radius: 6px;
         cursor: pointer;
     }
+
+    &__stepsContainerDivider {
+        display: none;
+    }
 }
 
 
+
+
 @media screen and (min-width:'732px') {
+    .plan {
+        &__hero {
+            justify-content: unset;
+            padding: 56px;
+            box-sizing: border-box;
+            background-image: url('../../assets/plan/tablet/image-hero-blackcup.jpg');
+            margin-bottom: 144px;
+        }
+
+        &__heroText {
+            max-width: 400px;
+            text-align: left;
+            h1 {
+                font-size: 48px;
+                line-height: 48px;
+            }
+        }
+
+        &__steps {
+            margin-right: -40px;
+            margin-left: -40px;
+            margin-bottom: 144px;
+        }
+
+        &__stepsContainer {
+            position: relative;
+            flex-direction: row;
+            max-width: 800px;
+            align-items: unset;
+            padding-left: 40px;
+            padding-right: 40px;
+            gap: 10px;
+        }
+
+        &__stepsCard {
+            max-width: 33%;
+            text-align: left;
+            padding-left: unset;
+            padding-right: unset;
+            span {
+                margin-bottom: 40px;
+            }
+        }
+        &__stepsCardCircle {
+            height: 32px;
+            width: 32px;
+            margin-top: -19px;
+            border-radius: 50%;
+            border: 2px solid #0E8784;
+            background-color: transparent;
+        }
+
+        &__stepsContainerDivider {
+            position: absolute;
+            left: 60px;
+            width: 62%;
+            display: block;
+            height: 2px;
+            background-color: #FDD6BA;
+            border: none;
+        }
+
+        &__selection {
+            margin-bottom: 144px;
+        }
+
+        &__selectionButtons {
+            height: 250px;
+            flex-direction: row;
+        }
+
+        &__selectionButton{
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            padding: 32px 24px;
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+            
+            &_selected {
+                width: 33.33%;
+                display: flex;
+                flex-direction: column;
+                padding: 32px 24px;
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+        &__summary {
+            margin-bottom: 144px;
+        }
+
+        &__summaryCard {
+            padding: 28px 44px;
+            margin-bottom: 40px;
+        }
+    }
 }
 
 @media screen and (min-width:'1200px') {

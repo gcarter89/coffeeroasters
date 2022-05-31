@@ -13,12 +13,15 @@ export default function Plan() {
 
             <section className={styles.plan__steps}>
                 <div className={styles.plan__stepsContainer}>
+                    <hr className={styles.plan__stepsContainerDivider} />
                     <div className={styles.plan__stepsCard}>
+                        <div className={styles.plan__stepsCardCircle}></div>
                         <span>01</span>
                         <h2>Pick your coffee</h2>
                         <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
                     </div>
                     <div className={styles.plan__stepsCard}>
+                        <div className={styles.plan__stepsCardCircle}></div>
                         <span>02</span>
                         <h2>Choose the frequency</h2>
                         <p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
@@ -26,6 +29,7 @@ export default function Plan() {
 
                     </div>
                     <div className={styles.plan__stepsCard}>
+                        <div className={styles.plan__stepsCardCircle}></div>
                         <span>03</span>
                         <h2>Receive and enjoy!</h2>
                         <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
