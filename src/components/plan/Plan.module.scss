@@ -184,6 +184,7 @@
         &__steps {
             margin-right: -40px;
             margin-left: -40px;
+            margin-bottom: 144px;
         }
 
         &__stepsContainer {
@@ -224,6 +225,10 @@
             border: none;
         }
 
+        &__selection {
+            margin-bottom: 144px;
+        }
+
         &__selectionButtons {
             height: 250px;
             flex-direction: row;
@@ -251,6 +256,15 @@
                     margin-bottom: 24px;
                 }
             }
+        }
+
+        &__summary {
+            margin-bottom: 144px;
+        }
+
+        &__summaryCard {
+            padding: 28px 44px;
+            margin-bottom: 40px;
         }
     }
 }
