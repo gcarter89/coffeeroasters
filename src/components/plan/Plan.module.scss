@@ -183,6 +183,7 @@
         }
 
         &__steps {
+            background-image: url('../../assets/plan/tablet/bg-steps.png');
             margin-right: -40px;
             margin-left: -40px;
             margin-bottom: 144px;
@@ -272,7 +273,24 @@
 
 @media screen and (min-width:'1200px') {
     .plan {
+        &__hero {
+            background-image: url('../../assets/plan/desktop/image-hero-blackcup.jpg');
+            height: 450px;
+            padding: 134px 85px;
+        }
+
+        &__heroText {
+            max-width: 486px;
+            h1 {
+                font-size: 72px;
+                line-height: 72px;
+                margin-bottom: 32px;
+            }
+        }
+
+
         &__steps {
+            background-image: url('../../assets/plan/desktop/bg-steps.png');
             margin-left: auto;
             margin-right: auto;
             max-width: 1280px;
