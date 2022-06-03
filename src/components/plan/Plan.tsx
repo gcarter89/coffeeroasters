@@ -50,7 +50,7 @@ export default function Plan() {
                 <div className={styles.plan__selectionCards}>
                     <div className={styles.plan__selectionCard}>
                         <button className={styles.plan__selectionHeader}>
-                            <h3>How do you do drink your coffee?</h3>
+                            <h3>How do you drink your coffee?</h3>
                             <Chevron />
                         </button>
                         <div className={styles.plan__selectionButtons}>
