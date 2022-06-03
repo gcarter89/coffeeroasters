@@ -71,6 +71,10 @@
     &__selection {
         margin-bottom: 120px;
     }
+
+    &__selectionMenu {
+        display: none;
+    }
     
     &__selectionCard {
         margin-bottom: 96px;
@@ -288,7 +292,6 @@
             }
         }
 
-
         &__steps {
             background-image: url('../../assets/plan/desktop/bg-steps.png');
             margin-left: auto;
@@ -313,6 +316,52 @@
 
         &__stepsCardCircle {
             margin-bottom: 64px;
+        }
+
+        &__selection {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // padding-left: 136px;
+            // padding-right: 136px;
+        }
+
+        &__selectionMenu {
+            display: block;
+            width: 256px;
+            margin-right: 80px;
+        }
+
+        &__selectionMenuList {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+            color: #0E8784;
+        }
+
+        &__selectionCards {
+            width: 730px;
+        }
+
+        &__selectionMenuList {
+            list-style: none;
+            padding: 0px;
+            li {
+                border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+                padding: 24px 0px;
+                cursor: pointer;
+                span {
+                    padding-right: 28px;
+                }
+            }
+            li:first-of-type {
+                padding: 0px 0px 24px 0px;
+            }
+
+            li:last-of-type {
+                padding: 24px 0px 0px 0px;
+                border: none;
+            }
         }
     }
 }
