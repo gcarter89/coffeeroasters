@@ -7,15 +7,25 @@ import Planalto from '../../assets/home/desktop/image-planalto.png';
 import {ReactComponent as Bean} from '../../assets/home/desktop/icon-coffee-bean.svg';
 import {ReactComponent as Gift} from '../../assets/home/desktop/icon-gift.svg';
 import {ReactComponent as Truck} from '../../assets/home/desktop/icon-truck.svg';
+import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
 export default function Home() {
+
+    let navigate = useNavigate();
+
+    function handleClick(event:React.MouseEvent) {
+        event.preventDefault();
+        navigate('plan');
+    }
+
     return (
         <>
             <section className={styles.home__hero}>
                 <div className={styles.home__heroText}>
                     <h1>Great coffee made simple.</h1>
                     <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                    <button className={styles.home__button}>Create your plan</button>
+                    <button onClick={handleClick} className={styles.home__button}>Create your plan</button>
                 </div>
             </section>
             <section className={styles.home__collection}>
@@ -117,7 +127,7 @@ export default function Home() {
                         <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
                     </div>
                 </div>
-                <button className={styles.home__button}>Create your plan</button>
+                <button onClick={handleClick} className={styles.home__button}>Create your plan</button>
 
             </section>
         </>
