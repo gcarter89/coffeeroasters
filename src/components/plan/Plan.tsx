@@ -44,7 +44,7 @@ export default function Plan() {
                         <li><span>02</span> Bean Type</li>
                         <li><span>03</span> Quantity</li>
                         <li><span>04</span> Grind Option</li>
-                        <li><span>05</span> Deliveries</li>
+                        <li className={styles.plan__selectionMenuList_selected}><span>05</span> Deliveries</li>
                     </ol>
                 </nav>
                 <div className={styles.plan__selectionCards}>
