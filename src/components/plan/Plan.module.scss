@@ -281,6 +281,7 @@
             background-image: url('../../assets/plan/desktop/image-hero-blackcup.jpg');
             height: 450px;
             padding: 134px 85px;
+            margin-bottom: 168px;
         }
 
         &__heroText {
@@ -297,6 +298,7 @@
             margin-left: auto;
             margin-right: auto;
             max-width: 1280px;
+            margin-bottom: 168px;
         }
 
         &__stepsContainer {
@@ -322,6 +324,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            margin-bottom: unset;
             // padding-left: 136px;
             // padding-right: 136px;
         }
@@ -368,6 +371,7 @@
             display: grid;
             grid-template-columns: 330px auto;
             justify-content: center;
+            margin-bottom: 168px;
         }
         &__summaryCard {
             background-image: url('../../assets/plan/desktop/bg-order-summary.png');
