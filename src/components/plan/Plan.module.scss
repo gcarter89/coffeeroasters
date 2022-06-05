@@ -166,6 +166,10 @@
         cursor: pointer;
     }
 
+    &__button:hover {
+        background-color: #66D2CF;
+    }
+
     &__stepsContainerDivider {
         display: none;
     }
