@@ -127,6 +127,7 @@
 
     &__summaryCard {
         background-image: url('../../assets/plan/mobile/bg-order-summary.png');
+        background-size: cover;
         padding: 32px 24px;
         border-radius: 8px;
         margin-bottom: 56px;
@@ -335,6 +336,9 @@
 
         &__selectionMenu {
             display: block;
+            position: sticky;
+            top: 32px;
+            height: fit-content;
             width: 256px;
             margin-right: 80px;
         }
