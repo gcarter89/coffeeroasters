@@ -35,6 +35,10 @@
             line-height: 15px;
             letter-spacing: 0.92px;
         }
+
+        a:hover {
+            color: #FEFCF7;
+        }
     }
 
     &__icons {
@@ -42,7 +46,11 @@
         justify-content: center;
         gap: 24px;
         margin-top: 48px;
-        
+        svg:hover {
+            path {
+                fill: #FDD6BA;
+            }
+        }
     }
 }
 

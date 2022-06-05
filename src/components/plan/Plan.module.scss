@@ -118,6 +118,10 @@
         }
     }
 
+    &__selectionButton:hover {
+        background-color: #FDD6BA;
+    }
+
     &__summary {
         display: flex;
         flex-direction: column;
@@ -160,6 +164,10 @@
         padding: 16px 32px;
         border-radius: 6px;
         cursor: pointer;
+    }
+
+    &__button:hover {
+        background-color: #66D2CF;
     }
 
     &__stepsContainerDivider {
@@ -343,20 +351,20 @@
             margin-right: 80px;
         }
 
-        &__selectionMenuList {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 900;
-            color: #0E8784;
-        }
-
         &__selectionCards {
             width: 730px;
         }
 
         &__selectionMenuList {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+            color: rgba(14, 135, 132, 0.4);
             list-style: none;
             padding: 0px;
+            &_selected {
+                color: #333D4B !important;
+            }
             li {
                 border-bottom: 1px solid rgba(131, 136, 143, 0.25);
                 padding: 24px 0px;
@@ -365,6 +373,11 @@
                     padding-right: 28px;
                 }
             }
+            li:hover {
+                color: rgba(14, 135, 132, 0.6);
+                // color: #0E8784;
+            }
+
             li:first-of-type {
                 padding: 0px 0px 24px 0px;
             }
