@@ -363,5 +363,23 @@
                 border: none;
             }
         }
+
+        &__summary {
+            display: grid;
+            grid-template-columns: 330px auto;
+            justify-content: center;
+        }
+        &__summaryCard {
+            background-image: url('../../assets/plan/desktop/bg-order-summary.png');
+            grid-column: 2;
+            box-sizing: border-box;
+            max-width: 730px;
+            padding: 28px 64px;
+        }
+        &__button {
+            grid-column: 2;
+            width: fit-content;
+            justify-self: end;
+        }
     }
 }
