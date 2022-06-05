@@ -1,5 +1,6 @@
 import Hamburger from "./Hamburger";
 import styles from './Nav.module.scss';
+import { Link } from "react-router-dom";
 
 export default function Nav(props: {
     hamburgerOpen:boolean
@@ -13,9 +14,9 @@ export default function Nav(props: {
                 <Hamburger hamburgerOpen={props.hamburgerOpen} handleHamburgerClick={props.handleHamburgerClick} />
             </div>
             <div className={styles.nav__links}>
-                <a onClick={(e) => e.preventDefault()} href="/">HOME</a>
-                <a onClick={(e) => e.preventDefault()} href="/about">ABOUT US</a>
-                <a onClick={(e) => e.preventDefault()} href="/plan">CREATE YOUR PLAN</a>
+                <Link to="/">HOME</Link>
+                <Link to="about">ABOUT US</Link>
+                <Link to="plan">CREATE YOUR PLAN</Link>
             </div>
         </nav>
         
