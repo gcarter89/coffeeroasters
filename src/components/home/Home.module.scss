@@ -8,6 +8,10 @@
         cursor: pointer;
     }
 
+    &__button:hover {
+        background-color: #66D2CF;
+    }
+
     &__hero {
         display: flex;
         align-items: center;
