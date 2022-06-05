@@ -14,6 +14,8 @@
         max-width: 279px;
         color: #FEFCF7;
         text-align: center;
+        padding-left: 24px;
+        padding-right: 24px;
 
         h1 {
             margin-bottom: 24px;
@@ -31,6 +33,7 @@
         margin-right: -24px;
         border-radius: 10px;
         background-size: cover;
+        background-position: center;
         margin-bottom: 120px;
     }
 
@@ -69,6 +72,10 @@
 
     &__selection {
         margin-bottom: 120px;
+    }
+
+    &__selectionMenu {
+        display: none;
     }
     
     &__selectionCard {
@@ -175,6 +182,8 @@
         &__heroText {
             max-width: 400px;
             text-align: left;
+            padding-left: unset;
+            padding-right: unset;
             h1 {
                 font-size: 48px;
                 line-height: 48px;
@@ -182,6 +191,7 @@
         }
 
         &__steps {
+            background-image: url('../../assets/plan/tablet/bg-steps.png');
             margin-right: -40px;
             margin-left: -40px;
             margin-bottom: 144px;
@@ -270,4 +280,114 @@
 }
 
 @media screen and (min-width:'1200px') {
+    .plan {
+        &__hero {
+            background-image: url('../../assets/plan/desktop/image-hero-blackcup.jpg');
+            height: 450px;
+            padding: 134px 85px;
+            margin-bottom: 168px;
+        }
+
+        &__heroText {
+            max-width: 486px;
+            h1 {
+                font-size: 72px;
+                line-height: 72px;
+                margin-bottom: 32px;
+            }
+        }
+
+        &__steps {
+            background-image: url('../../assets/plan/desktop/bg-steps.png');
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1280px;
+            margin-bottom: 168px;
+        }
+
+        &__stepsContainer {
+            max-width: 1045px;
+            gap: 96px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            h2 {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__stepsContainerDivider {
+            width: 69%;
+        }
+
+        &__stepsCardCircle {
+            margin-bottom: 64px;
+        }
+
+        &__selection {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: unset;
+            // padding-left: 136px;
+            // padding-right: 136px;
+        }
+
+        &__selectionMenu {
+            display: block;
+            width: 256px;
+            margin-right: 80px;
+        }
+
+        &__selectionMenuList {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+            color: #0E8784;
+        }
+
+        &__selectionCards {
+            width: 730px;
+        }
+
+        &__selectionMenuList {
+            list-style: none;
+            padding: 0px;
+            li {
+                border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+                padding: 24px 0px;
+                cursor: pointer;
+                span {
+                    padding-right: 28px;
+                }
+            }
+            li:first-of-type {
+                padding: 0px 0px 24px 0px;
+            }
+
+            li:last-of-type {
+                padding: 24px 0px 0px 0px;
+                border: none;
+            }
+        }
+
+        &__summary {
+            display: grid;
+            grid-template-columns: 330px auto;
+            justify-content: center;
+            margin-bottom: 168px;
+        }
+        &__summaryCard {
+            background-image: url('../../assets/plan/desktop/bg-order-summary.png');
+            grid-column: 2;
+            box-sizing: border-box;
+            max-width: 730px;
+            padding: 28px 64px;
+        }
+        &__button {
+            grid-column: 2;
+            width: fit-content;
+            justify-self: end;
+        }
+    }
 }
