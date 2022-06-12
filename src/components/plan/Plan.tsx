@@ -6,8 +6,18 @@ export default function Plan() {
 
     const [intersectedListItem, setIntersectedListItem] = useState(0);
 
-    const [scrollTarget, setScrollTarget] = useState(0);
-    function handleTargetScroll(event:React.MouseEvent, target:number) {
+    const [orderArray, setOrderArray] = useState(
+        [
+            'Capsule',
+            'Single Origin',
+            '250g',
+            'Wholebean',
+            'Every week'
+        ]
+    )
+
+    const [scrollTarget, setScrollTarget] = useState(undefined);
+    function handleTargetScroll(event:React.MouseEvent, target:any) {
         event.preventDefault();
         setScrollTarget(target);
     }
@@ -58,18 +68,18 @@ export default function Plan() {
                     </ol>
                 </nav>
                 <div className={styles.plan__selectionCards}>
-                    <SelectionCard scrollTarget={scrollTarget} setIntersectedListItem={setIntersectedListItem} id={0} question='How do you drink your coffee?' options={[['Capsule','Compatible with Nespresso systems and similar brewers'], ['Filter', 'For pour over or drip methods like Aeropress, Chemex, and V60'], ['Espresso', 'Dense and finely ground beans for an intense, flavorful experience']]} />
-                    <SelectionCard scrollTarget={scrollTarget} setIntersectedListItem={setIntersectedListItem} id={1} question='What type of coffee?' options={[['Single Origin','Distinct, high quality coffee from a specific family-owned farm'], ['Decaf', 'Just like regular coffee, except the caffeine has been removed'], ['Blended', 'Combination of two or three dark roasted beans of organic coffees']]} />
-                    <SelectionCard scrollTarget={scrollTarget} setIntersectedListItem={setIntersectedListItem} id={2} question='How much would you like?' options={[['250g', 'Perfect for the solo drinker. Yields about 12 delicious cups.'], ['500g', 'Perfect option for a couple. Yields about 40 delectable cups.'], ['1000g', 'Perfect for offices and events. Yields about 90 delightful cups.']]} />
-                    <SelectionCard scrollTarget={scrollTarget} setIntersectedListItem={setIntersectedListItem} id={3} question='Want us to grind them?' options={[['Wholebean', 'Best choice if you cherish the full sensory experience'], ['Filter', 'For drip or pour-over coffee methods such as V60 or Aeropress'], ['Cafetiére', 'Course ground beans specially suited for french press coffee']]} />
-                    <SelectionCard scrollTarget={scrollTarget} setIntersectedListItem={setIntersectedListItem} id={4} question='How often should we deliver?' options={[['Every week', '$7.20 per shipment. Includes free first-class shipping.'], ['Every 2 weeks', '$9.60 per shipment. Includes free priority shipping.'], ['Every month', '$12.00 per shipment. Includes free priority shipping.']]} />
+                    <SelectionCard scrollTarget={scrollTarget} setOrderArray={setOrderArray} orderArray={orderArray} setIntersectedListItem={setIntersectedListItem} id={0} question='How do you drink your coffee?' options={[['Capsule','Compatible with Nespresso systems and similar brewers'], ['Filter', 'For pour over or drip methods like Aeropress, Chemex, and V60'], ['Espresso', 'Dense and finely ground beans for an intense, flavorful experience']]} />
+                    <SelectionCard scrollTarget={scrollTarget} setOrderArray={setOrderArray} orderArray={orderArray} setIntersectedListItem={setIntersectedListItem} id={1} question='What type of coffee?' options={[['Single Origin','Distinct, high quality coffee from a specific family-owned farm'], ['Decaf', 'Just like regular coffee, except the caffeine has been removed'], ['Blended', 'Combination of two or three dark roasted beans of organic coffees']]} />
+                    <SelectionCard scrollTarget={scrollTarget} setOrderArray={setOrderArray} orderArray={orderArray} setIntersectedListItem={setIntersectedListItem} id={2} question='How much would you like?' options={[['250g', 'Perfect for the solo drinker. Yields about 12 delicious cups.'], ['500g', 'Perfect option for a couple. Yields about 40 delectable cups.'], ['1000g', 'Perfect for offices and events. Yields about 90 delightful cups.']]} />
+                    <SelectionCard scrollTarget={scrollTarget} setOrderArray={setOrderArray} orderArray={orderArray} setIntersectedListItem={setIntersectedListItem} id={3} question='Want us to grind them?' options={[['Wholebean', 'Best choice if you cherish the full sensory experience'], ['Filter', 'For drip or pour-over coffee methods such as V60 or Aeropress'], ['Cafetiére', 'Course ground beans specially suited for french press coffee']]} />
+                    <SelectionCard scrollTarget={scrollTarget} setOrderArray={setOrderArray} orderArray={orderArray} setIntersectedListItem={setIntersectedListItem} id={4} question='How often should we deliver?' options={[['Every week', '$7.20 per shipment. Includes free first-class shipping.'], ['Every 2 weeks', '$9.60 per shipment. Includes free priority shipping.'], ['Every month', '$12.00 per shipment. Includes free priority shipping.']]} />
                 </div>
             </section>
 
             <section className={styles.plan__summary}>
                 <div className={styles.plan__summaryCard}>
                     <h3>Order Summary</h3>
-                    <p>“I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean. <span>250g</span> ground ala <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</p>
+                    <p>“I drink my coffee as <span>{orderArray[0]}</span>, with a <span>{orderArray[1]}</span> type of bean. <span>{orderArray[2]}</span> ground ala <span>{orderArray[3]}</span>, sent to me <span>{orderArray[4]}</span>.”</p>
                 </div>
                 <button className={styles.plan__button}>Create my plan!</button>
 

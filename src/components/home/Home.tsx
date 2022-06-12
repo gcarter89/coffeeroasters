@@ -8,7 +8,6 @@ import {ReactComponent as Bean} from '../../assets/home/desktop/icon-coffee-bean
 import {ReactComponent as Gift} from '../../assets/home/desktop/icon-gift.svg';
 import {ReactComponent as Truck} from '../../assets/home/desktop/icon-truck.svg';
 import { useNavigate } from 'react-router-dom';
-import React from 'react';
 
 export default function Home() {
 
@@ -16,6 +15,7 @@ export default function Home() {
 
     function handleClick(event:React.MouseEvent) {
         event.preventDefault();
+        if (window) window.scrollTo(0,0);
         navigate('plan');
     }
 

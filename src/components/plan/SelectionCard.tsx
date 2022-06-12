@@ -1,25 +1,36 @@
 import styles from './Plan.module.scss';
-import { useMemo, useEffect, useRef, SetStateAction, useState } from 'react';
+import React, { useMemo, useEffect, useRef, SetStateAction, useState } from 'react';
 import {ReactComponent as Chevron} from '../../assets/plan/desktop/icon-arrow.svg';
 
 // Type 'Dispatch<SetStateAction<number>>' is not assignable to type 'number'.
 // props: setIntersectedListItem, question, options, id
 interface Properties {
     setIntersectedListItem: React.Dispatch<SetStateAction<number>>;
-    scrollTarget:number;
+    setOrderArray: React.Dispatch<SetStateAction<string[]>>;
+    orderArray: string[];
+    scrollTarget:any;
     question: string;
     options: string[][];
     id: number;
 }
 
-export default function SelectionCard({scrollTarget, setIntersectedListItem, question, options, id}:Properties) {
+export default function SelectionCard({scrollTarget, setOrderArray, orderArray, setIntersectedListItem, question, options, id}:Properties) {
 
     const [isVisible, setVisible] = useState(true);
+
+    //add state here to store and decide selections
+    function handleSelectionClick(event:React.MouseEvent, selectedValue:string) {
+        event.preventDefault();
+
+        orderArray[id] = selectedValue;
+        setOrderArray([...orderArray]);
+    }
 
     function handleVisibleClick(event:React.MouseEvent) {
         event.preventDefault();
         setVisible(prevState => !prevState);
     }
+
 
     const ref = useRef<HTMLDivElement | null>(null);
 
@@ -54,7 +65,7 @@ export default function SelectionCard({scrollTarget, setIntersectedListItem, que
         {isVisible ? <div className={styles.plan__selectionButtons}>
             {options.map((option:any) => {
                 return (
-                    <button key={Math.random()} className={styles.plan__selectionButton}>
+                    <button onClick={(e) => handleSelectionClick(e, option[0])} key={Math.random()} className={orderArray[id] === option[0] ? styles.plan__selectionButton_selected : styles.plan__selectionButton}>
                         <h3>{option[0]}</h3>
                         <p>{option[1]}</p>
                     </button>

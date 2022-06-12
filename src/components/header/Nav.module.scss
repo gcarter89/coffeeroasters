@@ -2,6 +2,9 @@
     &__links {
         display: none;
     }
+    &__hamburger {
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width:'732px') {
